@@ -16,7 +16,7 @@ public class UserServiceTest {
 
         Map<String, Object> user = userService.getUser("123");
 
-        assertEquals("1", user.get("user_id"));
+        assertEquals("123", user.get("user_id"));
         assertEquals("Magesh", user.get("name"));
         assertEquals(25, user.get("age"));
         assertNotEquals("Macdcdfgesh", user.get("name"));
