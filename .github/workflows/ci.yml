@@ -31,3 +31,12 @@ jobs:
 
       - name: Build Docker Image
         run: docker build -t learn-quarkus .
+
+      - name: Custom Script
+        run: |
+          echo "Starting build..."
+          pwd
+          ls -la
+          java -version
+          mvn --version
+          docker --version
